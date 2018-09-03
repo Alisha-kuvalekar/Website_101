@@ -1,0 +1,294 @@
+<!doctype html5>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+/**{
+background-color: pink;
+}*/
+li a{
+text-decoration: none;
+padding: 10px;
+float: left;
+color: brown;
+font-size: 1.5em;
+}
+
+
+
+.nav ul{
+width:700px;
+height: 100px;
+margin:100px auto;
+text-align: center;
+list-style: none;
+font-family: 'Lobster', cursive;
+}
+
+.menunav ul{
+width:700px;
+height: 50px;
+margin-left: 80px;
+margin: 50px auto;
+text-align: center;
+list-style: none;
+font-size: 13px;
+font-family: 'Lobster', cursive;
+}
+
+
+
+
+.container {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container{
+opacity: 1;
+ position: relative;
+ width: 350px;
+ height: 350px;
+}
+
+
+.middle{
+opacity: 0;
+position: absolute;
+text-align: center;
+top: 40%;
+left: 35%
+}
+.container:hover .image {
+  opacity: 0.3;
+  }
+.container:hover .middle{
+opacity: 1;
+}
+.text {
+  background-color: purple;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+ }
+  
+
+figcaption{
+background-color: babypink;
+width: 350px;
+height: 55px;
+text-align: center;
+
+
+}
+</style>
+</head>
+<body >
+
+<div class="nav">
+   <ul>
+	<li><a href="#" >HOME</li>
+	<li><a href="#" >ABOUT</li>
+	<li><a href="#" >MENU</li>
+	<li><a href="#" >CONTACT</li>
+	<li><a href="#" >ORDER</li>	
+	</ul>
+</div>
+
+<div class="menunav">
+   <ul>
+	<li><a href="#" >CAKE</li>
+	<li><a href="#" >CUPCAKES</li>
+	<li><a href="#" >PASTRIES</li>
+	<li><a href="#" >BREAD</li>
+		
+	</ul>
+</div>
+
+
+
+<div class="row">
+<div class="container">
+<img src="pastry1.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Black Forest<br>&#8377 60<br><span style="text-decoration: line-through; color: gray;">&#8377 80</span>  <span style="color :green;">25% OFF</span> </p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry2.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Orea Chocolate<br>&#8377 60/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry3.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Cherry Pineapple<br>&#8377 68<br><span style="text-decoration: line-through; color: gray;">&#8377 80</span>  <span style="color :green;">15% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="container">
+<img src="pastry4.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Desirable Rose<br>&#8377 60/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry5.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Black Coffee<br>&#8377 45<br><span style="text-decoration: line-through; color: gray;">&#8377 60</span>  <span style="color :green;">25% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry6.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Zebra Tort<br>&#8377 60/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="container">
+<img src="pastry7.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Truffle<br>&#8377 80<br><span style="text-decoration: line-through; color: gray;">&#8377 100</span>  <span style="color :green;">20% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry8.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Kiwi Vanilla<br>&#8377 70/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry9.png" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Truffle<br>&#8377 68<br><span style="text-decoration: line-through; color: gray;">&#8377 80</span>  <span style="color :green;">15% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="container">
+<img src="pastry10.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Strawberry Cream<br>&#8377 80<br><span style="text-decoration: line-through; color: gray;">&#8377 100</span>  <span style="color :green;">20% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry11.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Hide and Seek<br>&#8377 70/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry12.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Bread brownie<br>&#8377 68<br><span style="text-decoration: line-through; color: gray;">&#8377 80</span>  <span style="color :green;">15% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="container">
+<img src="pastry13.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Butterscotch<br>&#8377 80<br><span style="text-decoration: line-through; color: gray;">&#8377 100</span>  <span style="color :green;">20% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry14.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Dutch Square<br>&#8377 70/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry15.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Brownie<br>&#8377 68<br><span style="text-decoration: line-through; color: gray;">&#8377 80</span>  <span style="color :green;">15% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="container">
+<img src="pastry16.png" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Tricolor Pastry<br>&#8377 80<br><span style="text-decoration: line-through; color: gray;">&#8377 100</span>  <span style="color :green;">20% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry17.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Lemon Pastry<br>&#8377 70/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry18.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Choco Chip<br>&#8377 68<br><span style="text-decoration: line-through; color: gray;">&#8377 80</span>  <span style="color :green;">15% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="container">
+<img src="pastry19.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Rainbow<br>&#8377 80<br><span style="text-decoration: line-through; color: gray;">&#8377 100</span>  <span style="color :green;">20% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry20.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+<figcaption><p>Chocolate Vanilla<br>&#8377 70/-;</p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+<div class="container">
+<img src="pastry21.jpg" alt="cake" class="image" style="width:350px;height:300px;">
+	<figcaption><p>Cheese Pastry<br>&#8377 68<br><span style="text-decoration: line-through; color: gray;">&#8377 80</span>  <span style="color :green;">15% OFF</span></p></figcaption>
+<div class="middle">
+<div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>
+</div>
+</div>
+</div>
+
