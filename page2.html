@@ -1,120 +1,439 @@
+<!DOCTYPE HTML>
 <html>
+
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<title>web page designing</title>
+
 <style>
+
 	*{
-		margin:0px;
-		padding:0px;
-		background-color: pink;
+
+		box-sizing:border-box;
+		
+
 	}
 
-	#wrapper{
-		border:solid;
-		padding:10px;
-	}
+ .image{
 
-	.container .header {
-    height: 120px;
-    border:2px solid red;
-    position:relative;
+     width:100%;
+
+     height:400px;     
+
+      display: block;
+
+      opacity: 1;
+
+      backface-visibility: hidden;
+
+     }
+
+     
+
+	.price {
+
+  color: blue;;
+
+  float: right;
+
+  font-size: 25px;
+
 }
 
-.container .header .image {
-    background: no-repeat;
-    float: left;
+     .header {
+
+    background-color: transparent;
+
+    text-align: center;
+
+    padding: 20px;
+
+    
+
+    }
+
+    
+
+    h1{
+
+        font-size:300%;
+
+        color:black;
+
+        text-align:center; 
+
+        font-style:italic;   
+
+    }
+
+		.parallax {
+
+    /* The image used */
+
+    background-image: url("coffemac.jpg");
+
+
+
+    /* Set a specific height */
+
+    min-height: 500px; 
+
+
+
+    /* Create the parallax scrolling effect */
+
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+   }    
+
+    
+
+    
+
+     ul {
+
+    text-align: center;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+   background-color: black;
+
+    }
+
+    
+
+
+
+    li {
+
+    display: inline;
+    font-size:30px;
+
+    }
+
+
+
+    li a {
+
     display: inline-block;
-    width: 150px;
-    border:5px solid green;
-    position:relative;
-    vertical-align: 0px;
-    margin-top: 0px;
-     margin: -13px -5px 0;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+    }
 
 
-}
 
-.container .headertext {
-    float: right;
-    /*display: inline-block;*/
-    vertical-align: bottom;
-    font-family: sans-serif;
-    font-size: x-large;
-    /*border:2px solid blue;*/
-    text-align:center;
-    margin-left: 100px;
-    font-color:red;
-    text-decoration-style: blink;
-}
+    li a:hover {
+
+    background-color: gray;
+
+    color: white;
+
+    }
+
+     .active{
+
+        background-color:gray;
+
+        color:white; 
+
+     }
+
+     .column{
+
+    float:left;
+
+    width:33.3%;
+
+    padding:15px;
+
+    display:table-cell;
+
+    position:relative;     
+
+     }
+
+     
+
+     .row:after{
+
+    content:"";
+
+    display:table;
+
+    clear: both;
+
+    }
+
+   
+
+     
+
+	  
+
+     .footer {
+    
+
+    background-color: black;
+
+    text-align: center;
+
+    padding: 10px;
+
+    color: white;
+
+    } 
+
+   .fa {
+
+  padding: 20px;
+
+  font-size: 30px;
+
+  width: 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  margin: 5px 2px;
+
+  border-radius: 50%;
+
+  display: inline-table;
+
+  }
 
 
-	#navbar{
-		height: 70px;
-		background-color: #758209;
-		margin-top:10px;
-		list-style-type: none;
-		text-decoration:none;
+
+	.fa:hover {
+
+    background-color: white;
+
+    color: black;
+
 	}
 
-	ul li{
-		text-decoration:none;
-		float:left;
-		padding:10px;
-		margin:10px;
-		list-style-type: none;
-		text-align: center;
-		font-size: 25px;
-		margin:10px;
-		padding:;
-		margin-left: 190px;
-}
+	.fa-facebook {
 
-	img{
-		float:left;
-		margin-top: 40px;
-		padding:30px;
-		position:;
-	}
+  background: #3B5998;
 
-	#img{
-		margin-top:0px;
-		position:absolute;
-		margin-left: 0px;
-		display:inline-block;
+  color: white;
 
 	}
 
+	.fa-twitter{
+
+   background: #55ACEE;
+
+  	color: white;
+
+	}
+
+	.fa-instagram {
+
+  background:red;
+
+  color: white;
+
+	}
+
+	.fa-pinterest {
+
+  background: #cb2027;
+
+  color: white;
+
+	}
+
+  .middle {
+
+  opacity:0;
+
+  position: absolute;
+
+  top: 45%;
+
+  left: 35%;
+
+  text-align: center;
+
+  padding: 25px;
+
+   transform: translate(-20%, -30%);
+
+  
+
+  }
+
+     
+
+     
+
+     .column:hover .image{
+
+         opacity: 0.3;
+
+     }
+
+     
+
+     .column:hover .middle{
+
+        opacity: 1;
+
+     }
+
+     .text{
+
+       color:white;
+
+       font-size:30px;
+
+       background-color: black;
+
+       padding: 10px;
+
+     }
 
 </style>
+
 </head>
+
 <body>
-	<div id="wrapper">
-	<div id="container" class="container">
-    <div class="header">
-        <div class="header image"><div id="img"><img src="http://diylogodesigns.com/wp-content/uploads/2016/03/raise-bakery-logo-in-uk.png" width="120px" height="90px" style="position:absolute;"></div></div>
-        <div class="headertext"><h1 style="margin-left: 0px;"><marquee>online bakery products shopping</marquee></h1></div>
-    </div>
-</div>
-		<div id="navbar">
+
+	
+    <div class="header"> </div>
+
+		<div >
+
 		<ul>
+
 			<li><a href="home">home</a></li>
+
 			<li><a href="about us">about_us</a></li>
-			<li><a href="home">contact_us</a></li>
-			<li><a href="home">products</a></li>
+
+			<li><a href="contact us">contact_us</a></li>
+
+			<li><a href="" >products</a></li>
+
 		</ul>
-	</div>
-	<div id="container">
-		<figure><img src="https://www.purebread.co.nz/wp-content/uploads/Prod_YB_Loaf.jpg" height="360px" width="360px"></figure>
-		<figure><img src="https://3.imimg.com/data3/BQ/DU/MY-3324533/bakery-products-500x500.jpg" height="360px" width="360px"></figure>
-		<figure><img src="https://measurement.gov.au/industry/Business/PublishingImages/bread.JPG" height="360px" width="360px"></figure>
-		<figure><img src="http://alliedblending.com/wp-content/uploads/2011/09/bakery-bread.jpg" height="360px" width="360px"></figure>
-		<figure><img src="https://healthyleo.com/wp-content/uploads/2017/04/bread-and-wheat-products.jpg" height="360px" width="360px"></figure>
-		<figure><img src="http://www.thelondonbakery.co.uk/uploads/images/PanelImages/General/Bread%20Rolls.jpg" height="360px" width="360px"></figure>
-		<figure><img src="https://static1.squarespace.com/static/56fd379ad51cd41823eb00a1/56fecd6ab09f95b37d28b8d0/571b6ccc1bbee027950a0ceb/1461415118703/boulangerie-jade-products-breads3.jpg" height="360px" width="360px"></figure>
-		<figure><img src="http://www.pamelasproducts.com/wp-content/uploads/2013/01/Crispy-French-Bread-Bowl1-1024x685.jpg" height="360px" width="360px"></figure>
-		<figure><img src="http://www.pridecitytrading.com/img/food/confectionery-bakery-products/seeds-breads.jpg" height="360px" width="360px"></figure>
-	</div>
 
 	</div>
+</div>
+
+   <div class="row">
+      <div class="column">
+
+		<img src="https://www.purebread.co.nz/wp-content/uploads/Prod_YB_Loaf.jpg" height="360px" width="360px" class="image">
+		<div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div>
+       </div>
+
+		<div class="column"><img src="https://3.imimg.com/data3/BQ/DU/MY-3324533/bakery-products-500x500.jpg" height="360px" width="360px" class="image">
+			<div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+
+		<div class="column"><img src="https://measurement.gov.au/industry/Business/PublishingImages/bread.JPG" height="360px" width="360px" class="image"><div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+   </div>
+   <div class="row">
+
+		<div class="column"><img src="http://alliedblending.com/wp-content/uploads/2011/09/bakery-bread.jpg" height="360px" width="360px" class="image"><div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+
+		<div class="column"><img src="https://healthyleo.com/wp-content/uploads/2017/04/bread-and-wheat-products.jpg" height="360px" width="360px" class="image">	<div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+
+		<div class="column"><img src="http://www.thelondonbakery.co.uk/uploads/images/PanelImages/General/Bread%20Rolls.jpg" height="360px" width="360px" class="image">	<div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+    </div>
+    <div class="row">
+
+		<div class="column"><img class="image" src="https://static1.squarespace.com/static/56fd379ad51cd41823eb00a1/56fecd6ab09f95b37d28b8d0/571b6ccc1bbee027950a0ceb/1461415118703/boulangerie-jade-products-breads3.jpg" height="360px" width="360px"><div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+
+		<div class="column"><img src="http://www.pamelasproducts.com/wp-content/uploads/2013/01/Crispy-French-Bread-Bowl1-1024x685.jpg" height="360px" width="360px"class="image"><div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+
+		<div class="column"><img src="http://www.pridecitytrading.com/img/food/confectionery-bakery-products/seeds-breads.jpg" height="360px" width="360px" class="image"><div class="middle">
+
+                    <div class="text"><a href="#" style = "text-decoration: none; color: white;">Add To Cart</a></div>    
+
+       </div></div>
+
+	
+
+  </div>
+
+	
+	<div class="footer">
+
+		<p style="font-style: normal;">WORKING HOURS:8 AM To 8 PM<br>Email:asgah@gmail.com</p>
+
+		<div>
+
+		<ul>
+
+			<li><a href="#" class="fa fa-facebook"></a></li>
+
+			<li><a href="#" class="fa fa-twitter"></a></li>
+
+			<li><a href="#" class="fa fa-instagram"></a></li>
+
+			<li><a href="#" class="fa fa-pinterest"></a></li>
+
+		</ul>
+
+		</div>
+
+		
+
+   </div>
+
+
 
 </body>
+
 <html>
